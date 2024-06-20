@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bloq de Notas</title>
+    <style>
+        table, th, td {
+        border: 1px solid black 
+        }
+    </style>
+</head>
+<body>
+    ><table style="width: 500px;">
+        <thead> 
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Balon de futból</td>
+                <td>$15000</td>
+            </tr>
+            <tr>
+                <td>Balon de Voleibol</td>
+                <td>$25000</td>
+            </tr>
+            <tr>
+                <td>Balon de baloncesto</td>
+                <td>$35000</td>
+            </tr>
+            <tfoot>
+                <td>Balon de Futbol Americano</td>
+                <td>$40000</td>
+            </tfoot>
+        </tbody>
+    </table>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;"> Sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;"> Sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;"> Sub elemento 1</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="GET">
+        <label for="nombre">Nombre</label>
+        <input type="text"id="nombre" name="nombre" placeholder="Escribe Aqui Tu Nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text"id="apellido" name="apellido" placeholder="Escribe Aqui Tu Apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="30"rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <button type="button">Tipo Botón</button>
+        <button type="submit">Tipo Submit</button>
+        <button type="reset">Tipo Reset</button>
+    </form>
+    <h1>Andres Ayala</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3> 
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi cuarto heading</h5>
+    <h6>Mi ultimo heading</h6>
+    <hr>
+    <h2>Andres</h2>
+    <p>Este texto <span style = "color: rgb(23, 208, 146);";>es mas largo porque si</span>, <br><br>para mostrar como funciona la etiqueta span</p>
+    <!--Esto no aparece-->
+    <a target="_blank" href="https://www.google.com">Ir a Google</a>
+    <hr>
+    <img src="img/Tigre.jpg" width="400"/>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#Titulo{
+    color: aqua;
+}
+
+p {
+    color: blueviolet
+}
+
+div p{
+    color: blue;
+}
+
+div h2, div h3{
+    color: chartreuse;
+}
+
+*{
+    font-size: 24px;
+}
+
+/*Holaaaa*/ 
+
+.color {
+    /* border: 8px red dashed; */
+}
+
+#Fondo{
+    background-color: blueviolet;
+}

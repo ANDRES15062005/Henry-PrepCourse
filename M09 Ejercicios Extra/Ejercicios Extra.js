@@ -24,6 +24,7 @@ function capToFront(string) {
    // Tu código:
 }
 
+
 function asAmirror(frase) {
    // Recibes una frase. Tu tarea es retornar un nuevo string en el que el orden de las palabras sea el mismo.
    // La diferencia es que cada palabra estará escrita al inverso.

@@ -2,69 +2,106 @@
 
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
-   // Tu código:
+   // Tu código: 
+   return array [0]
 }
+
+console.log(devolverPrimerElemento(["Hola", "Adios", "5", "Welcome" ]));
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array [array.length - 1]
 }
+ console.log(devolverUltimoElemento([1, "Andres", "Wendy", true]))
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return array.length  
 }
+
+console.log(obtenerLargoDelArray([1, "Andres", "Wendy", true]))
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   var Incremento = [];
+
+   for (var i = 0; i < array.length; i++) {
+      Incremento.push(array[i] + 1) 
+   }
+   return Incremento
 }
+
+console.log(incrementarPorUno([1, 5, 7, 0 ]))
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-}
+   array.push(elemento)
+   return array
+} 
+
+console.log(agregarItemAlFinalDelArray([1,2,3,4], 5))
+
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.unshift(elemento)
+   return array 
 }
+
+console.log(agregarItemAlComienzoDelArray([1,2,3,5,8],3));
 
 function dePalabrasAFrase(palabras) {
    // El argumento "palabras" es un arreglo de strings.
    // Retornar un string donde todas las palabras estén concatenadas
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
-   // Tu código:
+   // Tu código: 
+   return palabras.join(" ")
 }
+console.log(dePalabrasAFrase(['Hello', 'world!']));
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   return array.includes(elemento)
 }
-
+console.log(arrayContiene([1,2,3,4,5,6],6));
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+  return arrayOfNums.reduce((acum, next) => acum + next)
+  
 }
-
+console.log(agregarNumeros([1,2,3,4]));
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
+   return resultadosTest.reduce((acum, next) => acum + next)/ resultadosTest.length
 }
-
+console.log(promedioResultadosTest([1,2,3,4]));
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+ //return Math.max(...arrayOfNums)
+ var max = 0 
+ for (let i = 0; i < arrayOfNums.length; i++) {
+    if(arrayOfNums[i] > max) max = arrayOfNums[i]
+ }
+ return max
 }
-
+console.log(numeroMasGrande([1,4,8,16,9,5,23,4]));
 function multiplicarArgumentos() {
    // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto.
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
